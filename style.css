@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+/* book list section */
+.none {
+  display: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+#books-list li {
+  list-style: none;
+  font-size: 20px;
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+/* add button section */
+button {
+  padding: 5px;
+  border: 3px black solid;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 3px 3px 1px black;
+  color: black;
+  font-size: 19px;
+}
+
+
+/* add books section */
+
+#add_books {
+  width: 70vw;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 350px;
+  height: 40px;
+  border: 3px black solid;
+  box-shadow: 3px black;
+
+}
+
+textarea {
+  width: 400px;
+  height: 40px;
+  border: 3px black solid;
+
+}
+
+input::placeholder {
+  color: grey;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.links {
+  list-style: none;
+}
+
+
+/* home page book details content diplay */
+.vertical-menu {
+  width: 100%;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* web page mobile cotent display view */
+.mobile-container {
+  max-width: 100%;
+  margin: auto;
+
+  color: black;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #02B603;
+  color: white;
+}
+
+
+/* card columns design and display */
+.column {
+  float: left;
+  width: 40.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.remove {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #FF0000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.remove:hover {
+  background-color: #555;
+
+}
+
+

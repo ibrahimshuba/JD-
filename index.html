@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic" rel="stylesheet" />
+		<!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title>Awesome Books</title>
+    </head>
+    <body>
+		
+<!-- Simulate a smartphone / tablet view -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" class="active">Home</a>
+  <div id="myLinks">
+ <!-- link to pages -->
+<a id ="book-list" class="nav_link" href="#">Book List Home</a>
+
+<a id="open-form" class="nav_link" href="#">Add New Book</a>
+
+<a id="open-featured" class="nav_link" href="#">Featured</a>
+
+
+  </div>
+  
+  <!-- clickable burger menu -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    <h1>Book List</h1>
+    <div id="books-list"></div>
+
+        <!-- Page Content for adding books -->
+
+      <section id="add_books" class="none">
+            <form id="books-form">
+            <div class="inputs">
+                    <input type="text" id="bookcover" placeholder="Paste book cover image link here:" required><br>
+                    <input type="text" id="title" placeholder="Title:" required><br>
+                    <input type="text" id="subtitle" placeholder="Sub-Title:" required><br>
+                    <input type="text" id="allauthors" placeholder="Author(s):" required><br>
+					<input type="text" id="number_of_pages" placeholder="Number Of Pages:" required><br>
+					<textarea type="text" id="description" placeholder="Description:" required ></textarea><br>
+                    <button type="submit"  class="remove">Add New Book</button>
+            </div>
+            </form>
+      </section>
+
+<!--display content in card row format-->
+      <section id="featured" class="none">
+	    <br/>
+	    <br/>
+	    <br/>
+	    <br/>
+<div class="row">
+  <div class="column">
+    <div class="card">
+  
+       <img src="http://books.google.com/books/content?id=NTkzEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api">
+		<br>
+		<br>
+      <div class="container">
+		  <label>Title</label> 
+        <h2>HTML5 for .NET Developers</h2>
+		<br>
+		  <label>Sub Title</label>
+        <h4>Single page web apps, JavaScript, and semantic markup</h4>
+		<br>
+		  <label>Author(s)</label>
+        <h4>Ian Gilman & James Jackson</h4>
+		<br>
+		  <label>Number of Pages</label>
+        <h4>416</h4>
+		<br>
+		  <label>Description</label>
+        <h5>Summary HTML5 for .NET Developers teaches professional software engineers how to integrate the latest HTML5 APIs and semantic markup into rich web applications using JavaScript, ASP.NET MVC, and WCF. Written from the .NET perspective,
+		this book is full of practical applications and ways to connect the new web standards with your existing development practices About the Technology A shift is underway for Microsoft developers—to build web applications you'll need to integrate HTML5 features like Canvas-based graphics and the new JavaScript-driven APIs with familiar technologies like ASP.NET MVC and WCF. This book is designed for you. About this Book HTML5 for .NET Developers teaches you how to blend HTML5 with your current .NET tools and practices.
+		You'll start with a quick overview of the new HTML5 features and the semantic markup model. </h5>
+     
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+		
+        <img src="http://books.google.com/books/content?id=d3p4ngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api">
+		<br>
+		<br>
+      <div class="container">
+		  <label>Title</label> 
+        <h2>HTML5</h2>
+		<br>
+		  <label>Sub Title</label>
+        <h4>The Missing Manual</h4>
+		<br>
+		  <label>Author(s)</label>
+        <h4>Matthew MacDonald</h4>
+		<br>
+		  <label>Number of Pages</label>
+        <h4>498</h4>
+		<br>
+		  <label>Description</label>
+        <h5>A guide to HTML5 covers such topics as markup, Web forms, audio and video,
+		Canvas, CSS3, data storage, offline applications, and JavaScript.</h5>
+     
+      </div>
+      </div>
+      </div>
+      </section>
+	    </div>
+<!-- End smartphone / tablet look -->
+</div> 
+<script src="script.js"></script>
+
+<!--display web page links in dropdown menu-->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+    </body>
+</html>
